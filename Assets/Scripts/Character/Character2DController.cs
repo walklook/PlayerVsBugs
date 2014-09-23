@@ -133,17 +133,20 @@ public class Character2DController : MonoBehaviour {
 			canShoot = false;
 			numberShoots--;
 			PlayerPrefs.SetInt("PlayerShoots",numberShoots);
+			// play fire effect sound
 			NGUITools.PlaySound(fireSound, 1, 1);
 		}
 	}
 	
 	void ApplyPlayerVelocity ()
 	{
+		// limit the player's position in the map in x axis.
 		if ( ( transform.position.x <= 0 && velocityVector.x < 0 ) || ( transform.position.x >= map.TiledMap.Width && velocityVector.x > 0 ) )
 		{
 			velocityVector.x = 0;
 		}
 
+		// limit the player's position in the map in y axis.
 		if ( ( transform.position.y >= 0 && velocityVector.y > 0 ) || ( transform.position.y <= -map.TiledMap.Height && velocityVector.y < 0 ) )
 		{
 			velocityVector.y = 0;
