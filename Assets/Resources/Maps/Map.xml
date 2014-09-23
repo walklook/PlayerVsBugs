@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="60" tilewidth="32" tileheight="32" backgroundcolor="#ffaaff">
+ <tileset firstgid="1" name="Deserto" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="tmw_desert_spacing.png" width="265" height="199"/>
+  <terraintypes>
+   <terrain name="Deserto" tile="29"/>
+   <terrain name="Tijolos" tile="9"/>
+   <terrain name="Pedras" tile="33"/>
+   <terrain name="Caminho" tile="14"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1"/>
+  <tile id="1" terrain="0,0,1,1"/>
+  <tile id="2" terrain="0,0,1,0"/>
+  <tile id="3" terrain="3,3,3,0"/>
+  <tile id="4" terrain="3,3,0,3"/>
+  <tile id="5" terrain="0,0,0,3"/>
+  <tile id="6" terrain="0,0,3,3"/>
+  <tile id="7" terrain="0,0,3,0"/>
+  <tile id="8" terrain="0,1,0,1"/>
+  <tile id="9" terrain="1,1,1,1"/>
+  <tile id="10" terrain="1,0,1,0"/>
+  <tile id="11" terrain="3,0,3,3"/>
+  <tile id="12" terrain="0,3,3,3"/>
+  <tile id="13" terrain="0,3,0,3"/>
+  <tile id="14" terrain="3,3,3,3"/>
+  <tile id="15" terrain="3,0,3,0"/>
+  <tile id="16" terrain="0,1,0,0"/>
+  <tile id="17" terrain="1,1,0,0"/>
+  <tile id="18" terrain="1,0,0,0"/>
+  <tile id="19" terrain="1,1,1,0"/>
+  <tile id="20" terrain="1,1,0,1"/>
+  <tile id="21" terrain="0,3,0,0"/>
+  <tile id="22" terrain="3,3,0,0"/>
+  <tile id="23" terrain="3,0,0,0"/>
+  <tile id="24" terrain="0,0,0,2"/>
+  <tile id="25" terrain="0,0,2,2"/>
+  <tile id="26" terrain="0,0,2,0"/>
+  <tile id="27" terrain="1,0,1,1"/>
+  <tile id="28" terrain="0,1,1,1"/>
+  <tile id="29" terrain="0,0,0,0"/>
+  <tile id="30" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="31" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="32" terrain="0,2,0,2"/>
+  <tile id="33" terrain="2,2,2,2"/>
+  <tile id="34" terrain="2,0,2,0"/>
+  <tile id="35" terrain="2,2,2,0"/>
+  <tile id="36" terrain="2,2,0,2"/>
+  <tile id="37" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="38" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="39" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="40" terrain="0,2,0,0"/>
+  <tile id="41" terrain="2,2,0,0"/>
+  <tile id="42" terrain="2,0,0,0"/>
+  <tile id="43" terrain="2,0,2,2"/>
+  <tile id="44" terrain="0,2,2,2"/>
+  <tile id="45" terrain="0,0,0,0" probability="0"/>
+  <tile id="46" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="47" terrain="0,0,0,0" probability="0.5"/>
+ </tileset>
+ <layer name="Terreno" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2aaVMbMQyG3SbpRSm09IAeIfQgtJSQ///rag+rifqOZNne9R7tfngHJrtr+1nJsqz12jm3njVrlqknXk8bPRvBeGrrlddJo9MRjGfmnXn/N94Lr48F+iTwlraV02db3iuvrwX6JvCWtpXTZ1e8371+ZehW4P2Z2UaqflTgLWkrNn/52mzJWrvbjLGrtnYGL79myYp1Y+C17EvXll4fFK0SeDcT433pHvz1kddjr4U7+PvxCO17n8m7Ua4993rhdZTwrqbgz8GOPAYduzTe4O/nE+S14pHGG67dDMh7nfgcn388Lq3c36xkP87LnyW/CHN8A33sR2LfS2AlO10LNj9t7ue8kl/E5vDQvLHxSrzrEfOGPAJzo7XTYxH5McUcXHfp9xzevavHSznvrZPnZUwYW7de74Ez6AZ4wz0rJ78Xur+UNzWHlWzXNg/kisVnyaalvKljR/+MaSXYFoU2sni7ijG5vKF/yv0kLZqxWvehvvTEa9kK7cZzA0kUb6z7Ys/X5LVENRiqz4T+X3u9UXSWeF/s+RTebSVe3lYYA+bBWkzjeVFJv0PZF3lL5ntqX3xdl/LJf4031j7tk6V1qRYv5QpWPQLHmbu2L5U2tXc3VP5cYn/LJ3iuRTama7SG1+bV9oQpNakUnUNfVq2jJi+tA5cR3pw5a+3l0ca0rxzKn/l4sQbXtm/pXUpt456mJi8J9024jmwz+w256ILZUvLpnJo937u25Y3tEWPrpxYHAmvIpz+7Q30W41buXo3UllerU+FakurjwQ9CHvrO66075Jdo41K14ZVYeWzlNrGYKQ7smr9hr3HErm+E9krWglxeXs+RanLoqzhGfs99pF/kxffL6x58T1Map0g89kmcS6fnA5KdU/06+PQZ/IYxi95pl+uR5rvcf7Vx8FwX75Fsa8Vw7ZtDjfpVrOZo2W9faGONF/OZWvUcqVYo+axWO8XvSanMOI/a8ObmtdqZE34+RcsncT2xmFPiYtfzF2NfaFs6y8HPa6Ty8twhpfar+VfN/Pmq+V/K5dDfcE+B+ydpv5w7j/rilfb+fP7uoB3pe71VP5D2h33x/nYPfn3H/o/N3wvlmnS9re4q8OacL8OzZX2dPevye1nO+TI8W9bX2bMu9r85isXnKZ4dnXln3pl35p15p6kp8P4BuzmZCkA4AAA=
+  </data>
+ </layer>
+ <objectgroup name="Collider_0">
+  <object name="Parede" type="Collider" x="432" y="816" width="224" height="64"/>
+  <object name="Parede" type="Collider" x="752" y="816" width="416" height="64"/>
+  <object name="Parede" type="Collider" x="1104" y="464" width="64" height="352"/>
+  <object name="Blue Potion" type="NoCollider" x="736.043" y="703.922" width="32" height="32" rotation="0.271293">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Blue"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Red Potion1" type="NoCollider" x="512" y="640" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Red"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Green Potion" type="NoCollider" x="672.063" y="479.886" width="32" height="32" rotation="0.398314">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Green"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Yellow Potion" type="NoCollider" x="1344" y="1472" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Yellow"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Cruz" type="Collider" x="1232" y="1168">
+   <polyline points="0,0 32,0 32,32 64,32 64,64 32,64 32,160 0,160 0,64 -32,64 -32,32 0,32 0,0"/>
+  </object>
+  <object name="Parede" type="Collider" x="272" y="272">
+   <polygon points="0,0 448,0 448,64 64,64 64,448 0,448"/>
+  </object>
+  <object name="Parede" type="Collider" x="272" y="880" width="64" height="448"/>
+  <object name="Parede" type="Collider" x="272" y="1488">
+   <polygon points="0,0 64,0 64,96 128,96 128,-32 320,-32 320,0 160,0 160,96 320,96 320,160 0,160"/>
+  </object>
+  <object name="Parede" type="Collider" x="720" y="1584" width="96" height="64"/>
+  <object name="Parede" type="Collider" x="976" y="1584">
+   <polygon points="0,0 608,0 608,-288 672,-288 672,64 0,64"/>
+  </object>
+  <object name="Parede" type="Collider" x="880" y="272">
+   <polygon points="0,0 768,0 768,864 704,864 704,64 0,64"/>
+  </object>
+  <object name="RespawnFromMap1-Desert2" type="NoCollider" x="768" y="384" width="64" height="32" visible="0">
+   <properties>
+    <property name="0-prefab" value="Respawn"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab sendmessage 0" value="SetRespawn|RespawnFromMap1-Desert2"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Player" type="NoCollider" x="543.979" y="512.027" width="64" height="64" rotation="-0.0475114">
+   <properties>
+    <property name="0-prefab" value="Player"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Placa4" type="Collider" x="1152" y="1248" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Pedra3" type="Collider" x="1376" y="576" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Pedra1" type="Collider" x="1536" y="416" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Pedra2" type="Collider" x="896" y="480" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Placa5" type="Collider" x="384" y="1280" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Placa1" type="Collider" x="704" y="384" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Placa2" type="Collider" x="384" y="672" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Pedra4" type="Collider" x="1344" y="1248" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Placa6" type="Collider" x="704" y="1536" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object name="Red Potion2" type="NoCollider" x="448" y="416" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Red"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="672.285" y="447.886" width="34.9832" height="30.9509" rotation="0.398314">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="671.841" y="511.885" width="32" height="32" rotation="0.398314">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="704.062" y="480.108" width="32" height="32" rotation="0.398314">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="640.064" y="479.663" width="32" height="32" rotation="0.398314">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="448" y="448" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="448" y="384" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="416" y="416" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="480" y="416" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="512" y="672" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="512" y="608" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="480" y="640" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="544" y="640" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="735.891" y="735.922" width="32" height="32" rotation="0.271293">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="736.194" y="671.922" width="32" height="32" rotation="0.271293">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="704.043" y="703.77" width="32" height="32" rotation="0.271293">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="768.042" y="704.073" width="32" height="32" rotation="0.271293">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="1312" y="1472" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="1344" y="1504" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="1376" y="1472" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="1344" y="1440" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="751.937" y="1143.1" width="32" height="32" rotation="-0.067936">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="783.898" y="1111.06" width="32" height="32" rotation="-0.067936">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="719.899" y="1111.14" width="32" height="32" rotation="-0.067936">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Blue Potion" type="NoCollider" x="751.898" y="1111.1" width="32" height="32" rotation="-0.067936">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Blue"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="751.861" y="1079.1" width="32" height="32" rotation="-0.067936">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion3" type="NoCollider" x="587" y="1070" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Right_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion2" type="NoCollider" x="523" y="1070" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Left_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion4" type="NoCollider" x="555" y="1038" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Up_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Red Potion1" type="NoCollider" x="555" y="1070" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="HealDrunks_Red"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+  <object name="Scorpion1" type="NoCollider" x="555" y="1102" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Scorpion_Down_Stay"/>
+    <property name="0-prefab add collider" value="false"/>
+    <property name="0-prefab detach" value="true"/>
+    <property name="0-prefab path" value="Prefabs/"/>
+    <property name="0-prefab z depth" value="0"/>
+    <property name="transfer collider" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
